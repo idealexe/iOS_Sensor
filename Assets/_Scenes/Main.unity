@@ -373,7 +373,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Accel
+  m_Text: 'Accel X: 0
+
+    Accel Y: 0
+
+    Accel Z: 0'
 --- !u!222 &1175057665
 CanvasRenderer:
   m_ObjectHideFlags: 0
