@@ -4,15 +4,18 @@ using System.Collections;
 public class ParticleController : MonoBehaviour
 {
     private ParticleSystem particleSystem;
-    private GameObject acceleraion;
+    public AccelerometerController accelerationControler;
+    private Vector3 acceleration;
 
-    // Use this for initialization
     void Start()
     {
         particleSystem = gameObject.GetComponent<ParticleSystem>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
+        acceleration = accelerationControler.getAcceleraion();
+        acceleration.x = -3;
+        gameObject.transform.position = acceleration;
     }
 }
